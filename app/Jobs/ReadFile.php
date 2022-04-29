@@ -32,6 +32,6 @@ class ReadFile implements ShouldQueue
      */
     public function handle()
     {
-        Excel::import(new ImportFileData, public_path() . "/Sample-Spreadsheet-10-rows.csv");
+        Excel::import(new ImportFileData, public_path() . "/Sample-Spreadsheet-10-rows.xlsx");
     }
 }

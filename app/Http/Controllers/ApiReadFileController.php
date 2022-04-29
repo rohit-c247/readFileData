@@ -10,6 +10,7 @@ class ApiReadFileController extends Controller
 {
     public function index()
     {
+        //Excel::import(new ImportFileData, public_path() . "/Sample-Spreadsheet-10-rows.xlsx");
         ReadFile::dispatch();
         echo "Done";
     }
